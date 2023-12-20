@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url('../IMG/movie.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#button {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    color: #000;
+    font-size: 2em;
+    background-color: #FFb347;
+    border-radius: .2em;
+}
+
+.button:hover {
+    color: #cc0000;;
+    cursor: pointer;
+}
+
+#container {
+    color: #fff;
+    font: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25vw;
+    text-align: center;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+    position: absolute;
+    top: 40vh;
+}
+
+h2 {
+    position: absolute;
+    top: 55vh;
+} 
+
+.search-container {
+    position: absolute;
+    top: 59.5vh;
+}
+
+.button1 {
+
+    color: #000;
+    font-size: 1.5em;
+    background-color: #FFb347;
+    border-radius: .2em;
+}
+
+.button1:hover {
+    color: #cc0000;
+    cursor: pointer;
+}
+
+

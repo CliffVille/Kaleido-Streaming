@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: linear-gradient(to right, #BC2529, #005083);
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.3em;
+}
+
+.logostyle {
+    
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+.kelaido {
+    width: 50px;
+}
+
+.logostyle:hover {
+    color: #000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 15vw;
+}
+
+.nav-links li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.nav-links a:hover {
+    color: black;
+    font-size: 1em;
+}
+
+
+.button1 {
+    position: absolute;
+    right: 10px;
+    top: 2.5vh;
+    font-size: 1em;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+}
+
+.button2 {
+    position: absolute;
+    right: 60px;
+    top: 2.5vh;
+    font-size: 1em;
+    background: none;
+    color: #fff;
+}
+
+.button1 a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.button2 a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+.button1 p {
+ 
+    color: #fff;
+}
+
+.button2 p {
+
+    color: #fff;
+}
+
+.button1 p:hover {
+    color: #000;
+}
+
+.button2 p:hover {
+    color: #000;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+#welcome {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#welcome h1 {
+    color: #005083;
+    text-align: center;
+    margin-top: 2em;
+}
+
+#welcome p {
+    text-align: left;
+    color: #005083;
+    font-size: 1em;
+    margin-top: 2em;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10vh 0 0 0;
+}
+
+.list h1 {
+    color: #005083;
+    text-align: center;
+}
+
+.movies {
+    display: flex;
+}
+
+
+.box {
+
+    max-width: 500px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #005083;
+    box-shadow: 10px 10px 10px #005083;
+}
+
+
+.list1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10vh 0 0 0;
+}
+
+.list1 h1 {
+    color: #005083;
+}
+
+
+
+.box1 {
+
+    max-width: 500px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #005083;
+    box-shadow: 10px 10px 10px #005083;
+}
+
+
+ @media screen and (max-width: 768px) {
+ 
+ 
+    .nav-links {
+     position: absolute;
+     right: 0px;
+     height: 92vh;
+     top: 4vh;
+     background-color: #333;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 30vw;
+     transform: translateX(100%);
+     transition: transform 0.5s ease-in;
+     text-transform: uppercase;
+    }
+ 
+    .nav-links li {
+     opacity: 0;
+    }
+ 
+    .burger {
+     display: block;
+    }
+ 
+    .nav-active {
+     transform: translateX(0%);
+    }
+ 
+    @keyframes navLinkFade{
+     from{
+         opacity: 0;
+         transform: translateX(50px);
+     }
+     to{
+         opacity: 1;
+         transform: translateX(0px);
+     }
+    }
+ 
+    .toggle .line1{
+         transform: rotate(-45deg) translate(-5px, 6px);
+    }
+ 
+    .toggle .line2{
+         opacity: 0;
+    }
+ 
+    .toggle .line3{
+         transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+ 
+    .button1 {
+         position: relative;
+         top: 0;
+         left: 15vw;
+    }
+ 
+    .button2 {
+        position: relative;
+        top: 0;
+     }
+
+     #welcome {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #welcome h1 {
+        color: #005083;
+        text-align: center;
+    }
+    
+    #welcome p {
+        text-align: left;
+        color: #005083;
+        font-size: .7em;
+        margin-top: 2em;
+    }
+
+    .list {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .list h1 {
+        color: #005083;
+        position: relative;
+    }
+
+    .box, .box1 {
+        max-width: 150px;
+        margin: 10vh;
+        border: 2px solid #005083;
+        box-shadow: 10px 10px 10px #005083;
+    }
+
+    .movies {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .antman IMG, .fastx IMG, .blackadam IMG, .flash IMG, .johnwick IMG, .scream IMG, .spiderman IMG, .rambo IMG, .matrix IMG, .madmax IMG, .killbill IMG, .diehard IMG, .coldpursuit IMG, .born IMG {
+        width: 144px;
+    }
+
+    
+    .list1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .list1 h1 {
+        color: #005083;
+        position: relative;
+    }
+
+ }
+
+ @media screen and (max-width: 1600px) {
+
+    .nav-links {
+     width: 25vw;
+    }
+ 
+ }
